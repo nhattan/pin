@@ -8,12 +8,12 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
+  database: <%= ENV['DATABASE_NAME'] %>
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
-  database: <%= ENV['DATABASE_NAME'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
