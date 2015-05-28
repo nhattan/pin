@@ -11,6 +11,11 @@ default: &default
   database: <%= ENV['DATABASE_NAME'] %>
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
+  redis:
+    host: <%= ENV['REDIS_HOSTNAME'] %>
+    port: 6379
+    db: 0
+    namespace: <%= ENV['DATABASE_NAME'] %>
 
 development:
   <<: *default
