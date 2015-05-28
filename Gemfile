@@ -23,6 +23,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'dotenv-rails'
+gem 'redis-rails'
+gem 'sidekiq'
+gem 'devise-async'
 
 gem 'unicorn'
 gem 'capistrano-rails'
