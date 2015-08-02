@@ -26,6 +26,9 @@ gem 'dotenv-rails'
 gem 'redis-rails'
 gem 'sidekiq'
 gem 'devise-async'
+gem 'therubyracer', platforms: :ruby
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 gem 'unicorn'
 gem 'capistrano-rails'
