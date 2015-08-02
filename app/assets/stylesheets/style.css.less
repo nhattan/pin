@@ -1,3 +1,5 @@
+@import "twitter/bootstrap/mixins.less";
+
 .footer {
   bottom: 0;
   width: 100%;
@@ -35,6 +37,14 @@ video#bgvid {
   background: rgba(0,0,0,0);
   margin: 4rem;
   float: right;
+  a {
+    color: white;
+    background: rgba(0,0,0,0);
+    border: 1px solid white;
+  }
+  a:hover {
+    background: rgba(0,0,0,0.3)
+  }
   button {
     display: block;
     padding: 10px 20px;
@@ -60,12 +70,61 @@ video#bgvid {
 }
 
 body {
-  background: url(katie-large.jpg) no-repeat center center;
+  background: asset-url("katie-large.jpg") no-repeat center center;
+  background-size: cover;
 }
+
+#sessions-new {
+  background: rgba(0,0,0,0);
+  border: 1px solid rgba(0,0,0,0);
+  margin: 120px auto 0;
+  padding: 15px;
+  width: 350px;
+  h1 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 5px;
+    margin-top: 1px;
+    text-align: center;
+  }
+  .btn.btn-primary {
+    width: 100%;
+  }
+  .links {
+    margin-top: 15px;
+    a {
+      color: white;
+    }
+  }
+  .checkbox label {
+    color: white;
+  }
+  form .form-group {
+    input {
+      color: white;
+      background: rgba(0,0,0,0);
+    }
+    input::-webkit-input-placeholder { color: white; } /* WebKit browsers */
+    input:-moz-placeholder { color: white; } /* Mozilla Firefox 4 to 18 */
+    input::-moz-placeholder { color: white; } /* Firefox 19+ */
+    input:-ms-input-placeholder { color: white; } /* Internet Explorer 10+ */
+  }
+  form .actions {
+    input {
+      background: rgba(0,0,0,0);
+      border: 1px solid white;
+    }
+    input:hover {
+      background: rgba(0,0,0,0.3)
+    }
+  }
+}
+
 
 @media screen and (max-device-width: 800px) {
   body {
-    background: url(katie.jpg) no-repeat center center;
+    background: asset-url("katie.jpg") no-repeat center center;
+    background-size: cover;
   }
   #bgvid { display: none; }
 }
