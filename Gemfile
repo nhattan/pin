@@ -29,6 +29,7 @@ gem 'devise-async'
 gem 'therubyracer', platforms: :ruby
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
+gem 'newrelic_rpm'
 
 gem 'unicorn'
 gem 'capistrano-rails'
