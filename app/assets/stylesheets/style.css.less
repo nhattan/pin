@@ -12,14 +12,17 @@
     a {
       color: white;
     }
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
 .container {
-  min-height: 550px;
+  min-height: 850px;
 }
 
-video#bgvid {
+video#background-video {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -43,7 +46,7 @@ video#bgvid {
     border: 1px solid white;
   }
   a:hover {
-    background: rgba(0,0,0,0.3)
+    background: rgba(0,0,0,0.3);
   }
   button {
     display: block;
@@ -70,7 +73,7 @@ video#bgvid {
 }
 
 body {
-  background: asset-url("katie-large.jpg") no-repeat center center;
+  background: url(https://d1mri54pbg6gi7.cloudfront.net/katie-large.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -123,8 +126,8 @@ body {
 
 @media screen and (max-device-width: 800px) {
   body {
-    background: asset-url("katie.jpg") no-repeat center center;
+    background: url(https://d1mri54pbg6gi7.cloudfront.net/katie.jpg) no-repeat center center;
     background-size: cover;
   }
-  #bgvid { display: none; }
+  #background-video { display: none; }
 }
