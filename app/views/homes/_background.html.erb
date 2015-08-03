@@ -10,9 +10,7 @@ document.createElement('video');
     <source src="https://d1mri54pbg6gi7.cloudfront.net/katie.webm" type="video/webm">
   </video>
 
-  <div class="home-bar">
-    <span id="video-mute" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
-  </div>
+  <span id="video-mute" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
 
   <script type="text/javascript">
     var video = document.getElementById("background-video");
@@ -29,3 +27,9 @@ document.createElement('video');
     })
   </script>
 <% end %>
+
+<div class="something">
+  <% if current_user %>
+    <h1>Waiting for something cool with Tan!</h1>
+  <% end %>
+</div>
