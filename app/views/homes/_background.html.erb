@@ -4,7 +4,28 @@ document.createElement('video');
 </script>
 <![endif]-->
 
-<video preload="auto" loop="" autoplay="" id="background-video">
-  <source src="https://d1mri54pbg6gi7.cloudfront.net/katie.mp4" type="video/mp4">
-  <source src="https://d1mri54pbg6gi7.cloudfront.net/katie.webm" type="video/webm">
-</video>
+<% unless mobile_device? %>
+  <video poster="https://d1mri54pbg6gi7.cloudfront.net/katie-large.jpg" preload="auto" loop="" autoplay="" id="background-video">
+    <source src="https://d1mri54pbg6gi7.cloudfront.net/katie2.mp4" type="video/mp4">
+    <source src="https://d1mri54pbg6gi7.cloudfront.net/katie.webm" type="video/webm">
+  </video>
+
+  <div class="home-bar">
+    <span id="video-mute" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+  </div>
+
+  <script type="text/javascript">
+    var video = document.getElementById("background-video");
+    var pauseButton = document.getElementById("video-mute");
+
+    pauseButton.addEventListener("click", function() {
+      if (video.muted) {
+        video.muted = false;
+        pauseButton.className = "glyphicon glyphicon-volume-up";
+      } else {
+        video.muted = true;
+        pauseButton.className = "glyphicon glyphicon-volume-off";
+      }
+    })
+  </script>
+<% end %>
