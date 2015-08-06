@@ -5,7 +5,7 @@ document.createElement('video');
 <![endif]-->
 
 <% unless mobile_device? %>
-  <video poster="https://d1mri54pbg6gi7.cloudfront.net/katie-large.jpg" preload="auto" loop="" autoplay="" id="background-video">
+  <video preload="auto" loop="" autoplay="" id="background-video">
     <source src="https://d1mri54pbg6gi7.cloudfront.net/katie2.mp4" type="video/mp4">
     <source src="https://d1mri54pbg6gi7.cloudfront.net/katie.webm" type="video/webm">
   </video>
@@ -28,8 +28,8 @@ document.createElement('video');
   </script>
 <% end %>
 
-<div class="something">
-  <% if current_user %>
+<% if current_user %>
+  <div class="something">
     <h1>Waiting for something cool with Tan!</h1>
-  <% end %>
-</div>
+  </div>
+<% end %>
