@@ -1,5 +1,14 @@
 @import "twitter/bootstrap/mixins.less";
 
+.message {
+  text-align: center;
+}
+
+.alert-custom {
+  color: white;
+  display: inline-block;
+}
+
 .se-pre-con {
   position: fixed;
   left: 0px;
@@ -51,9 +60,15 @@
   cursor: pointer;
 }
 
+.video-mute-wrapper {
+  padding-left: 45px;
+  position: fixed;
+}
+
 .something {
   text-align: center;
   color: white;
+  padding-top: 80px;
 }
 
 #home-button {
@@ -70,8 +85,10 @@
   }
 }
 
-.header {
-  padding: 30px 30px 0 30px;
+.container.header {
+  padding-top: 30px;
+  min-height: initial;
+  height: 95px;
 }
 
 body {
@@ -126,8 +143,10 @@ body {
 }
 
 @media screen and (max-device-width: 800px) {
-  .header {
-    padding: 15px 15px 0 15px;
+  .container.header {
+    padding-top: 15px;
+    min-height: initial;
+    height: 95px;
   }
 
   body {
