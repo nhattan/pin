@@ -4,9 +4,17 @@ document.createElement('video');
 </script>
 <![endif]-->
 
-<% unless mobile_device? %>
+<% if mobile_device? %>
+  <div id="play-button">
+    <a href="//fast.wistia.net/embed/iframe/y3i7d3qh7l?popover=true" class="wistia-popover[height=360,playerColor=7b796a,width=640]">
+      <div class="rectangle"></div>
+      <div class="triangle"></div>
+    </a>
+  </div>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+<% else %>
   <video preload="auto" loop="" autoplay="" id="background-video">
-    <source src="https://dx51grft6g5j9.cloudfront.net/katie2.mp4" type="video/mp4">
+    <source src="https://dx51grft6g5j9.cloudfront.net/katie4.mp4" type="video/mp4">
     <source src="https://dx51grft6g5j9.cloudfront.net/katie.webm" type="video/webm">
   </video>
 

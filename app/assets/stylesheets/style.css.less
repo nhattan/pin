@@ -71,7 +71,7 @@
   padding-top: 80px;
 }
 
-#home-button {
+#account-area {
   padding-top: 15px;
   background: rgba(0,0,0,0);
   float: right;
@@ -92,7 +92,7 @@
 }
 
 body {
-  background: url(https://dx51grft6g5j9.cloudfront.net/katie-large.jpg) no-repeat center center;
+  background: url(https://dx51grft6g5j9.cloudfront.net/katie-large-2.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -150,10 +150,39 @@ body {
   }
 
   body {
-    background: url(https://dx51grft6g5j9.cloudfront.net/katie.jpg) no-repeat center center;
+    background: url(https://dx51grft6g5j9.cloudfront.net/katie-2.jpg) no-repeat center center;
     background-size: cover;
   }
+
   #background-video {
     display: none;
+  }
+
+  #play-button {
+    margin: 0 auto;
+    margin-top: 150px;
+    display: block;
+    height: 60px;
+    width: 100px;
+    overflow: hidden;
+  }
+
+  #play-button .rectangle {
+    background-color: gray;
+    width: 100px;
+    height: 60px;
+    opacity: 0.5;
+    margin: 0 auto;
+  }
+
+  #play-button .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 22px;
+    border-color: transparent transparent transparent white;
+    margin: 0 auto;
+    position: relative;
+    bottom: 45px;
   }
 }
