@@ -13,13 +13,13 @@ document.createElement('video');
   </div>
 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
 <% else %>
-  <video preload="auto" loop="" autoplay="" id="background-video">
+  <video preload="auto" loop="" autoplay="" id="background-video" muted>
     <source src="https://dx51grft6g5j9.cloudfront.net/katie4.mp4" type="video/mp4">
     <source src="https://dx51grft6g5j9.cloudfront.net/katie.webm" type="video/webm">
   </video>
 
   <div class="video-mute-wrapper">
-    <span id="video-mute" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+    <span id="video-mute" class="glyphicon glyphicon-volume-off" aria-hidden="true"></span>
   </div>
 
   <script type="text/javascript">
