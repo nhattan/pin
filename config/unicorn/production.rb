@@ -16,16 +16,18 @@ stderr_path "#{app_directory}/log/unicorn_#{rails_env}.log"
 stdout_path "#{app_directory}/log/unicorn_#{rails_env}.log"
 
 preload_app true
-GC.respond_to?(:copy_on_write_friendly=) and
+if GC.respond_to?(:copy_on_write_friendly=)
   GC.copy_on_write_friendly = true
+end
 
 before_exec do |server|
   ENV["BUNDLE_GEMFILE"] = "#{app_directory}/Gemfile"
 end
 
 before_fork do |server, worker|
-  defined?(ActiveRecord::Base) and
+  if defined?(ActiveRecord::Base)
     ActiveRecord::Base.connection.disconnect!
+  end
 
   old_pid = "#{server.config[:pid]}.oldbin"
   if old_pid != server.pid
@@ -40,6 +42,7 @@ before_fork do |server, worker|
 end
 
 after_fork do |server, worker|
-  defined?(ActiveRecord::Base) and
+  if defined?(ActiveRecord::Base)
     ActiveRecord::Base.establish_connection
+  end
 end
