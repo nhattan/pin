@@ -35,7 +35,7 @@ gem 'capistrano-bundler'
 gem 'capistrano-rvm'
 gem 'capistrano3-unicorn'
 gem 'capistrano-sidekiq'
-
+gem 'unicorn-worker-killer'
 group :development, :test do
   gem 'pry-rails'
   gem 'awesome_print'
