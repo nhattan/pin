@@ -1,6 +1,6 @@
 lock '3.4.0'
 
-ENV["RAILS_ENV"] || = 'staging'
+ENV["RAILS_ENV"] ||= 'staging'
 
 set :application, 'pin'
 set :repo_url, 'git@github.com:nhattan/pin.git'
