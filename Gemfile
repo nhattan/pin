@@ -29,13 +29,10 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'newrelic_rpm'
 
-gem 'unicorn'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
 gem 'capistrano-rvm'
-gem 'capistrano3-unicorn'
 gem 'capistrano-sidekiq'
-gem 'unicorn-worker-killer'
 group :development, :test do
   gem 'pry-rails'
   gem 'awesome_print'
