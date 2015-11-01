@@ -51,14 +51,4 @@ namespace :deploy do
   end
 
   after :migrate, :seed
-
-  desc "Restart application"
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      invoke "unicorn:restart"
-    end
-  end
-
-  after :publishing, :restart
-
 end
