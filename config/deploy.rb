@@ -25,7 +25,7 @@ set :pty, false
 set :linked_files, %w{.env}
 
 # Default value for linked_dirs is []
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads public/assets}
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads public/assets}
 
 # Default value for default_env is {}
 set :default_env, {
