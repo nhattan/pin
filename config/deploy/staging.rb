@@ -6,9 +6,9 @@
 set :stage, :staging
 set :rails_env, :staging
 
-role :app, %w{deploy@188.166.248.54}
-role :web, %w{deploy@188.166.248.54}
-role :db,  %w{deploy@188.166.248.54}
+role :app, %w{deploy@139.59.228.169}
+role :web, %w{deploy@139.59.228.169}
+role :db,  %w{deploy@139.59.228.169}
 
 
 # Extended Server Syntax
@@ -17,7 +17,7 @@ role :db,  %w{deploy@188.166.248.54}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server '188.166.248.54', user: 'deploy', roles: %w{app web db}
+server '139.59.228.169', user: 'deploy', roles: %w{app web db}
 
 
 # Custom SSH Options
