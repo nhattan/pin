@@ -3,11 +3,11 @@
     <%= image_tag 'https://dx51grft6g5j9.cloudfront.net/logo.png' %>
   </a>
 
-  <div id="account-area">
+  <!-- <div id="account-area">
     <% if current_user %>
       <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn" %>
     <% elsif controller_name != "sessions"  %>
       <%= link_to "Log in", new_user_session_path, class: "btn" %>
     <% end %>
-  </div>
+  </div> -->
 </div>
