@@ -1,0 +1,1 @@
+get_song_info_endpoint: "http://api.mp3.zing.vn/api/mobile/song/getsonginfo"
